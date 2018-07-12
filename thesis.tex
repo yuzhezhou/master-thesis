@@ -1,0 +1,78 @@
+\documentclass[ece,dissertation]{puthesis}
+
+\usepackage{amsmath}
+\usepackage{multicol}
+%\usepackage{subfigure}
+
+%from start
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{hhline}
+\usepackage{multirow}
+\usepackage{color,graphicx}
+\usepackage{hyperref}
+%from end
+
+% add 6/5/2018
+\usepackage{mhchem}
+
+% add 6/12/2018
+\floatstyle{plaintop}
+\restylefloat{table}
+
+% add 6/25/2018
+\usepackage{subcaption}
+
+% add 7/1/2018
+\usepackage{pdflscape}
+
+
+\title{Development of a Single-Ended Laser-Absorption Spectroscopy Sensor for High-Temperature Gases}
+\author{Yuzhe Zhou}{Zhou, Yuzhe}
+\pudegree{Master of Science in Mechanical Engineering}{MS}{August}{2018}
+
+\majorprof{Christopher S. Goldenstein, School of Mechanical Engineering}
+\campus{West Lafayette}
+
+\input{mydefs}
+\newcommand{\margins}{\Repeat{Show where the margins for the page are.}{4}}
+\let\en=\ensuremath
+\newcommand{\ve}[2]{\en{#1_1},~\en{#1_2},\ \ldots,~\en{#1_{#2}}}
+
+\begin{document}
+
+\volume
+
+% Front matter (dedication, etc.).
+\include{front}
+
+\include{chap1-intro}
+\include{chap2-fundamental}
+\include{chap3-wms}
+\include{chap4-sensor}
+%\include{chap5-engine}
+\include{chap5-conclusion}
+
+\include{summary}
+
+\include{recommendations}
+
+\include{bibliography}
+
+% Use "\appendix" for one appendix or "\appendices" for more than one
+% appendix.
+\appendix
+\include{drawing}
+
+%\include{demo-citations}
+%\include{demo-figures}
+%include{demo-multicols}
+%\include{demo-tables}
+%\include{demo-text}
+
+% A vita is optional for masters theses
+% and required for doctoral dissertations.
+
+%\include{vita}
+
+\end{document}
